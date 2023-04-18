@@ -44,7 +44,7 @@ const VendorSignIn = () => {
       },
     };
     axios
-      .post("https://event-proposalpage-h8dw.onrender.com/login", data, config)
+      .post("https://event-proposal-backend-final.onrender.com/login", data, config)
       .then((res) => {
         localStorage.setItem("token", res.data.jwt_token);
 

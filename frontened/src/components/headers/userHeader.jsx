@@ -16,7 +16,7 @@ const UserHeader = (props) => {
   const [vname,setVname]=useState("");
   useEffect(() => {
     async function getProductDetails() {
-      await axios.get(`https://event-proposalpage-h8dw.onrender.com/userDetails/`).then((res) => {
+      await axios.get(`https://event-proposal-backend-final.onrender.com/userDetails/`).then((res) => {
             setVname(res.data.data[res.data.data.length-1].name)
       });
       
