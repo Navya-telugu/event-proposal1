@@ -23,11 +23,11 @@ const ProductDetails = () => {
 
   console.log(eventImages);
   useEffect(() => {
-    axios.get("https://event-proposalpage-h8dw.onrender.com/vendorDetails").then((res) => {
+    axios.get("https://event-proposal-backend-final.onrender.com/vendorDetails").then((res) => {
       setVendorName(res.data.data[0]);
     });
     async function getProductDetails() {
-      await axios.get(`https://event-proposalpage-h8dw.onrender.com/users/${id}`).then((res) => {
+      await axios.get(`https://event-proposal-backend-final.onrender.com/users/${id}`).then((res) => {
         setProduct(res.data.data[0]);
       setImages(res.data.data[0].images)
       });

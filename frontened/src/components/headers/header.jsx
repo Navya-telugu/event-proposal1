@@ -16,7 +16,7 @@ const Header = (props) => {
   const [vname,setVname]=useState("");
   useEffect(() => {
     async function getProductDetails() {
-      await axios.get(`https://event-proposalpage-h8dw.onrender.com/vendorDetails`).then((res) => {
+      await axios.get(`https://event-proposal-backend-final.onrender.com/vendorDetails`).then((res) => {
             setVname(res.data.data[res.data.data.length-1].vendorName)
       });
       
